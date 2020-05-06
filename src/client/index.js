@@ -53,7 +53,7 @@ let weatherForecast = {
 // Handle GET and POST requests for the geo-coordiantes data
 const getCoordinates = (city) => {
   fetch(
-    `http://api.geonames.org/searchJSON?q=${city}&maxRows=10&username=rayomon`
+    `${proxy}http://api.geonames.org/searchJSON?q=${city}&maxRows=10&username=rayomon`
   )
     .then((response) => {
       return response.json();
