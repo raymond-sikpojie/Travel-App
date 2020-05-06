@@ -56,7 +56,6 @@ const getCoordinates = (city) => {
     `${proxy}http://api.geonames.org/searchJSON?q=${city}&maxRows=10&username=rayomon`
   )
     .then((response) => {
-      console.log("hey");
       return response.json();
     })
 
