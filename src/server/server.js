@@ -39,7 +39,7 @@ app.get("/geocoords", (req, res) => {
 });
 
 // Designates what port the app will listen to for incoming requests
-const port = process.env.PORT || 5500;
+const port = process.env.PORT;
 app.listen(port, function () {
   console.log(`Server running on port ${port}`);
 });
