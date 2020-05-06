@@ -97,7 +97,7 @@ const getCoordinates = (city) => {
 
 // Making GET request to retrieve geo coordinates
 const fetchCoords = () => {
-  fetch("http://localhost:5500/geocoords")
+  fetch("/geocoords")
     .then((response) => {
       return response.json();
     })
